@@ -1,0 +1,42 @@
+7,8c7,8
+< char	*version  = "experimental-0.05";
+< char	*date     = "2005/01/03";
+---
+> char	*version  = "experimental-0.05a for OSX";
+> char	*date     = "2014/03/14";
+19,20c19,20
+< #include <io.h>
+< #include <dir.h>
+---
+> //#include <io.h>
+> //#include <dir.h>
+1130,1131c1130,1131
+< 			if (!strncmp(p, "Å®", 2))
+< 			    p += 2;
+---
+> 			while(!strncmp(p, "<1F42>", 2))p+=6;
+> 			while(!strncmp(p, "Å®", 2))p+=2;
+1678c1678
+< 		strcat(val, "\\");
+---
+> 		strcat(val, "/");
+1682c1682
+< 		strcat(val, "\\");
+---
+> 		strcat(val, "/");
+1773c1773
+< 	    if (mkdir(path) < 0) {
+---
+> 	    if (mkdir(path,0755) < 0) {
+1791c1791
+< 	    if (mkdir(path) < 0) {
+---
+> 	    if (mkdir(path,0755) < 0) {
+1842c1842
+<     while (p > path && *p != '\\')
+---
+>     while (p > path && *p != '/')
+1846c1846
+< 	strcat(path, "\\");
+---
+> 	strcat(path, "/");
