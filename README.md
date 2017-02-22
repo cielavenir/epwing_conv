@@ -58,6 +58,7 @@ Note that:
 - `ruby epwing_conv.rb < COBUILD.html | ruby gaiji_rep.rb cobuild.lst > MyDictionary.xml`
 
 ### Building dictionary
+- Edit MyInfo.plist and Makefile's parameters properly
 - `make`
 
 ## License
