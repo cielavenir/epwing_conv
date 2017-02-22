@@ -10,9 +10,9 @@ require 'nkf' # to convert Zenkaku-alphabet to Hankaku
 
 #select appropriate one
 #SJIS
-STDIN.set_encoding("Windows-31J","UTF-8", :invalid => :replace, :undef => :replace)
+ARGF.set_encoding("Windows-31J","UTF-8", :invalid => :replace, :undef => :replace)
 #JIS
-#STDIN.set_encoding("ISO-2022-JP","UTF-8", :invalid => :replace, :undef => :replace)
+#ARGF.set_encoding("ISO-2022-JP","UTF-8", :invalid => :replace, :undef => :replace)
 
 id = ""
 title = ""
