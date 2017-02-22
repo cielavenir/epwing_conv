@@ -32,8 +32,8 @@ while line = gets
   end
   if line1 =~ /^<dd>/ then
     body = "\t<p>\n"
-    title2 = iconv.iconv(gets).gsub(/<br>|<nobr>|<\/nobr>/,"").chomp  #本文の1行目はタイトルに使う
-    while line2 = iconv.iconv(gets)
+    title2 = gets.gsub(/<br>|<nobr>|<\/nobr>/,"").chomp  #本文の1行目はタイトルに使う
+    while line2 = gets
       if line2 =~ /^<\/p><\/dd>|^<\/dl>/ then   #項目の最終行は</dd>もしくは</dl>で判定する（ebd2htmlの出力では最後の項目が</dd>で閉じられていないため）
         body = body.gsub(/&#x1f09;&#x00;&#x02;|<nobr>|<\/nobr>/,"")      #各行に入っている余計な文字列を削除
         body = body.gsub(/&#x1f09;&#x00;&#x03;/,"&nbsp;")      #各行に入っている余計な文字列を削除
