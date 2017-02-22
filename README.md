@@ -5,7 +5,7 @@
 ## Usage
 Based on http://www.binword.com/blog/archives/000588.html
 
-## Prerequisits
+## Prerequisites
 - Windows enviroment
   - Wine is alright. (ex) NXWine or CrossOver
 - EBDump
