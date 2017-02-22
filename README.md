@@ -58,7 +58,8 @@ Note that:
 - `ruby epwing_conv.rb < COBUILD.html | ruby gaiji_rep.rb cobuild.lst > MyDictionary.xml`
 
 ### Building dictionary
-- Edit MyInfo.plist and Makefile's parameters properly
+- Put MyInfo.plist, Makefile and MyDictionary.xml to Dictionary Development Kit's project_template.
+- Edit MyInfo.plist and Makefile's parameters properly.
 - `make`
 
 ## License
