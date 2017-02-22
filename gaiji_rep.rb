@@ -9,7 +9,7 @@ Encoding.default_external='UTF-8'
 list = File.readlines(ARGV.shift)
 re = list.map{|i|
   temp = i.chomp.split("\t")
-  [Regexp.new(temp.first), temp.last]
+  [temp.first, temp.last]
 }
 while line = STDIN.gets
   re.each{|elem|
